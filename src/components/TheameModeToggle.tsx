@@ -10,7 +10,7 @@ const TheameModeToggle = () => {
         isChecked={colorMode === "dark"}
         onChange={toggleColorMode}
       />
-      <Text>Switch Theme</Text>
+      <Text whiteSpace="nowrap">Switch Theme</Text>
     </HStack>
   );
 };
