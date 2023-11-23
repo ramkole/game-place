@@ -39,8 +39,8 @@ const SortSelector = ({ sortOrder, onSelectedSortOrder }: Props) => {
     (order) => order.value === sortOrder
   );
 
-  const { errors } = usePlatform();
-  if (errors) return null;
+  const { error } = usePlatform();
+  if (error) return null;
 
   return (
     <Menu>
