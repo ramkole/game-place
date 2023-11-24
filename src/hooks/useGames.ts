@@ -21,7 +21,8 @@ const useGames = (gameQuery: GameQuery | null) =>  useQuery<FetchResposne<Game>,
      parent_platforms: gameQuery?.platform?.id, 
      ordering: gameQuery?.sortOrder,
      search: gameQuery?.searchText
-   }})
+   }}),
+   
 
 })
 
