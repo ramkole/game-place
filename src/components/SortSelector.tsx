@@ -1,6 +1,6 @@
 import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
-import usePlatform from "../hooks/usePlatforms";
+import usePlatforms from "../hooks/usePlatforms";
 
 interface Props {
   onSelectedSortOrder: (sortOrder: string) => void;
@@ -39,7 +39,7 @@ const SortSelector = ({ sortOrder, onSelectedSortOrder }: Props) => {
     (order) => order.value === sortOrder
   );
 
-  const { error } = usePlatform();
+  const { error } = usePlatforms();
   if (error) return null;
 
   return (

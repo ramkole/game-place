@@ -9,7 +9,7 @@ export interface Platform {
   slug: string;
 }
 
-const usePlatform = () =>
+const usePlatforms = () =>
   useQuery<FetchResposne<Platform>, Error>({
     queryKey: ["platforms"],
     queryFn: apiCLient.getAll,
@@ -17,4 +17,4 @@ const usePlatform = () =>
     // initialData: genresData save in const and use fixed Data
   });
 
-export default usePlatform;
+export default usePlatforms;
